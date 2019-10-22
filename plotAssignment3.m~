@@ -1,0 +1,6 @@
+filename = '\output\artdata1output22.txt';
+fileID = fopen(filename,'r');
+formatSpec = '%d %f';
+sizeA = [2 Inf];
+A = fscanf(fileID,formatSpec,sizeA);
+fclose(fileID);
